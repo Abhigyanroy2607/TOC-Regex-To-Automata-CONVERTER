@@ -1,0 +1,19 @@
+{
+  "name": "regex-to-automaton-visualizer",
+  "version": "1.0.0",
+  "description": "A Theory of Computation project visualizing Thompson Construction, Subset Construction, and Hopcroft's Algorithm.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "TOC",
+    "automata",
+    "NFA",
+    "DFA",
+    "regex",
+    "visualization"
+  ],
+  "author": "",
+  "license": "MIT"
+}
