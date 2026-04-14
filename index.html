@@ -925,11 +925,8 @@ header {
       <div class="empty-title">No automaton yet</div>
       <div class="empty-sub">Enter a regex and click Build</div>
     </div>
-    <div class="legend" id="legend" style="display:none">
-      <div class="legend-item"><div class="legend-dot ld-start"></div>Start state</div>
-      <div class="legend-item"><div class="legend-dot ld-accept"></div>Accept state</div>
-      <div class="legend-item"><div class="legend-dot ld-normal"></div>Normal state</div>
-    </div>
+
+
   </div>
 </div>
 
@@ -2150,7 +2147,7 @@ function buildAutomaton() {
     document.getElementById('formatted-regex-display').innerHTML = `<span>${formatted}</span>`;
 
     document.getElementById('empty-state').style.display = 'none';
-    document.getElementById('legend').style.display = 'flex';
+
     document.getElementById('stats-panel').style.display = 'block';
     document.getElementById('table-panel').style.display = 'block';
     document.getElementById('thompson-panel').style.display = 'block';
