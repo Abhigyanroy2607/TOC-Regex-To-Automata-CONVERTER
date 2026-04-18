@@ -565,10 +565,7 @@ header{
     <div class="logo-icon">Σ</div>
     <span class="logo-full">Regex&nbsp;</span><span style="color:var(--accent);font-weight:400">→</span><span class="logo-full">&nbsp;Automaton</span>
   </div>
-  <div class="header-mid">Thompson · Subset Construction · Hopcroft's Algorithm</div>
-  <div class="header-right">
-    <span class="header-tag">v2.0</span>
-  </div>
+  <div class="header-mid">GTG Decomposition · Subset Construction · Hopcroft's Algorithm</div>
 </header>
 
 <div class="app">
@@ -694,7 +691,7 @@ header{
           <button class="thompson-tab active" onclick="switchThompsonTab('overview',this)">Steps</button>
           <button class="thompson-tab" onclick="switchThompsonTab('operators',this)">Rules</button>
         </div>
-        <div id="thompson-overview" style="display:flex;flex-direction:column"></div>
+        <div id="thompson-overview" style="display:flex;flex-direction:column;padding:8px 0"></div>
         <div id="thompson-operators" style="display:none;flex-direction:column"></div>
       </div>
 
@@ -2017,7 +2014,6 @@ function buildAutomaton() {
     document.getElementById('sim-result').style.display = 'none';
 
     // Populate
-    buildThompsonSteps(postfix);
     renderThompsonPanel();
     renderConversionPanel(currentNfa);
     renderMinDfaPanel(currentMinDfa);
